@@ -15,6 +15,8 @@
   --border-color: #eee;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --bg-color: #2f303a;
+  --border-radius: 4px;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -102,12 +104,16 @@ svg {
   fill: currentColor;
 }
 
-.logo .logo-blue,
+.logo .logo-blue {
+  color: var(--link-color);
+}
+
 .nav-links li a:hover,
 .nav-links li a:focus,
 .contact-links li a:hover,
 .contact-links li a:focus {
   color: var(--link-color);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .hero-content {
@@ -139,7 +145,7 @@ svg {
   border: 0;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
@@ -185,7 +191,7 @@ svg {
   background-color: var(--team-color);
   padding: 25px 100px;
   margin-bottom: 30px;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
 
 .examples-cards li p {
@@ -267,6 +273,7 @@ footer,
   color: var(--white-color);
   background-color: var(--link-color);
   border-radius: 50%;
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .client-cards li {
@@ -278,7 +285,7 @@ footer,
   align-items: center;
   justify-content: center;
   border: 1px solid var(--icons-color);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 15px 0;
   fill: var(--icons-color);
 }
@@ -287,6 +294,7 @@ footer,
 .client-cards li a:focus {
   border-color: var(--link-color);
   fill: var(--link-color);
+  transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
 footer {
@@ -330,6 +338,7 @@ footer {
 .footer-address p a:hover,
 .footer-address p a:focus {
   background-color: var(--link-color);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .footer-social {
@@ -355,6 +364,7 @@ footer {
 .footer-social .footer-social-icons li a:hover,
 .footer-social .footer-social-icons li a:focus {
   background-color: var(--link-color);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .portfolio-buttons {
@@ -373,7 +383,7 @@ footer {
 
 .portfolio-buttons-list button {
   border: 0;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   background-color: var(--team-color);
   color: inherit;
   font-weight: 500;
@@ -389,10 +399,13 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--link-color);
   color: var(--white-color);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio figcaption {
