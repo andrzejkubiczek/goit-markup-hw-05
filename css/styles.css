@@ -156,6 +156,7 @@ svg {
   padding: 10px 42px;
   background-color: var(--link-color);
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .examples-content {
@@ -417,6 +418,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .portfolio-buttons-list button:focus,
@@ -516,6 +518,7 @@ footer {
   border-radius: 50%;
   background-color: var(--white-color);
   color: var(--black-color);
+  cursor: pointer;
 }
 
 .is-hidden {
