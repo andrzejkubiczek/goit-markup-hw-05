@@ -13,6 +13,7 @@
   --contact-color: #757575;
   --icons-color: #afb1b8;
   --border-color: #eee;
+  --portfolio-box-color: rgba(33, 150, 243, 0.9);
   --boxed-color: rgba(47, 48, 58, 0.8);
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --bg-color: #2f303a;
@@ -452,4 +453,33 @@ footer {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+}
+
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 49px 45px 49px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic-bezier);
+  background-color: var(--portfolio-box-color);
+}
+
+.portfolio-overlay p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
 }
