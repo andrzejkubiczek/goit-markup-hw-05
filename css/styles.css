@@ -47,8 +47,6 @@ svg {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -84,12 +82,30 @@ svg {
 }
 
 .nav-links li a {
+  padding: 32px 0;
   color: var(--brand-color);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-decoration: none;
+}
+
+.nav-links .is-active {
+  position: relative;
+  color: var(--link-color);
+}
+
+.nav-links .is-active::after {
+  display: block;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
 }
 
 .contact-links li a {
