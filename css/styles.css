@@ -97,7 +97,6 @@ svg {
 }
 
 .nav-links .is-active::after {
-  display: block;
   position: absolute;
   content: '';
   bottom: 0;
