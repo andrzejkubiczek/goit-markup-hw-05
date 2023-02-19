@@ -496,13 +496,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal {
+.backdrop .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  transform: translate(-50%, -50%);
   background-color: var(--white-color);
   box-shadow: var(--box-shadows);
   border-radius: 4px;
@@ -512,8 +512,7 @@ footer {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--white-color);
