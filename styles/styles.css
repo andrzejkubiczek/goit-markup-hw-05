@@ -383,9 +383,59 @@ address {
   margin-left: 120px;
 }
 
-.footer-social-title {
+.footer-column:nth-child(3) {
+  margin-left: 80px;
+}
+
+.footer-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--white-color);
 }
+
+.subscribe {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-input {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  font-size: 12px;
+  min-width: 264px;
+  min-height: 40px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: var(--white-color);
+}
+
+.subscribe-input::placeholder {
+  color: var(--white-color);
+}
+
+.subscribe-icon {
+  fill: var(--white-color);
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  min-width: 165px;
+  min-height: 40px;
+  padding: 8px 24px;
+}
+
+/* ------ MODAL ------- */
