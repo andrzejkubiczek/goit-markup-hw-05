@@ -452,15 +452,19 @@ address {
   width: 100%;
   height: 100%;
   background-color: var(--form-border-color);
+  display: none;
   opacity: 0;
-  z-index: 999999;
-  visibility: hidden;
-  transition: opacity 250ms var(--cubic-bezier);
+  transition-property: display opacity;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
 }
 
-.is-open {
+.backdrop.is-open {
+  display: block;
   opacity: 1;
-  pointer-events: none;
+  @starting-style {
+    opacity: 0;
+  }
 }
 
 .modal {
