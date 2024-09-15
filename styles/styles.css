@@ -455,7 +455,7 @@ address {
   display: none;
   opacity: 0;
   transition-property: display opacity;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-behavior: allow-discrete;
 }
 
